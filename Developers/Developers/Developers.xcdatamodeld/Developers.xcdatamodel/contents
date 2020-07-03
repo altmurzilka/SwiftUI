@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Developer" representedClassName="Developer" syncable="YES">
+        <attribute name="desription" optional="YES" attributeType="String"/>
+        <attribute name="favo" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="imageD" optional="YES" attributeType="Binary"/>
+        <attribute name="loved" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Developer" positionX="-54" positionY="-9" width="128" height="118"/>
+    </elements>
+</model>
