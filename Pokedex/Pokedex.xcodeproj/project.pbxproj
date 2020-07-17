@@ -19,6 +19,7 @@
 		F16C91D724B0E28400BEB271 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F16C91D624B0E28400BEB271 /* Assets.xcassets */; };
 		F16C91DA24B0E28400BEB271 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F16C91D924B0E28400BEB271 /* Preview Assets.xcassets */; };
 		F16C91DD24B0E28400BEB271 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F16C91DB24B0E28400BEB271 /* LaunchScreen.storyboard */; };
+		F1C4BF1F24C240AD000BE4E0 /* PokemonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C4BF1E24C240AD000BE4E0 /* PokemonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		F16C91D924B0E28400BEB271 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F16C91DC24B0E28400BEB271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F16C91DE24B0E28400BEB271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1C4BF1E24C240AD000BE4E0 /* PokemonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				F129A3C524B0E5E70021FFE5 /* Pokemon.swift */,
 				F16C91D224B0E27F00BEB271 /* SceneDelegate.swift */,
 				F16C91D424B0E27F00BEB271 /* ContentView.swift */,
+				F1C4BF1E24C240AD000BE4E0 /* PokemonView.swift */,
 				F16C91D624B0E28400BEB271 /* Assets.xcassets */,
 				F16C91DB24B0E28400BEB271 /* LaunchScreen.storyboard */,
 				F16C91DE24B0E28400BEB271 /* Info.plist */,
@@ -179,6 +182,7 @@
 				F129A3BC24B0E5B70021FFE5 /* csv.swift in Sources */,
 				F16C91D124B0E27F00BEB271 /* AppDelegate.swift in Sources */,
 				F16C91D324B0E27F00BEB271 /* SceneDelegate.swift in Sources */,
+				F1C4BF1F24C240AD000BE4E0 /* PokemonView.swift in Sources */,
 				F16C91D524B0E27F00BEB271 /* ContentView.swift in Sources */,
 				F129A3C624B0E5E70021FFE5 /* Pokemon.swift in Sources */,
 			);
@@ -249,7 +253,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -304,7 +308,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

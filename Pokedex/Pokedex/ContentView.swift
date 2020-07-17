@@ -10,7 +10,9 @@ import SwiftUI
 
 struct ContentView: View {
     
-    //let col1 = UIColor(red: 1, green: 0.345, blue: 0.333, alpha: 1)
+    let pokemons: [Pokemon] = PokemonGenerator.shared.generatePokemons()
+    
+    var columns = Array(repeating: GridItem(.flexible(), spacing: 15), count: 3)
     
     init() {
         UINavigationBar.appearance().barTintColor = UIColor(red: 1, green: 0.345, blue: 0.333, alpha: 1)
@@ -21,23 +23,16 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            ZStack {
-                Image("bg")
-                    List() {
-                        ForEach(0..<8) { _ in
-                            HStack {
-                                ForEach(0..<3) { _ in
-                                    Image("orange_color")
-                                        .resizable()
-                                        .scaledToFit()
-                                }
-                            }
-                        }
+            LazyVGrid(columns: columns, spacing: 15) {
+                ForEach(self.pokemons) { pokemon in
+                    VStack {
+                        Image("\(pokemon.id)").resizable().frame(width: 40, height: 40)
+                        Text("\(pokemon.pokemonName)")
                     }
+                }
             }
             .navigationBarTitle(Text("Pokemon"), displayMode: .inline)
         }
-        
     }
 }
 
@@ -46,6 +41,8 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
 
 
 

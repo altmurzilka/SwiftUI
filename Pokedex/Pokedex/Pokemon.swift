@@ -32,8 +32,8 @@
 
 import Foundation
 
-struct Pokemon {
-    let pokemonID :  Int
+struct Pokemon: Identifiable {
+    let id : Int
     let pokemonName : String
     let baseExp : Int
     let height : Int
