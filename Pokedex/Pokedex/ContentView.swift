@@ -23,14 +23,39 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            LazyVGrid(columns: columns, spacing: 15) {
-                ForEach(self.pokemons) { pokemon in
-                    VStack {
-                        Image("\(pokemon.id)").resizable().frame(width: 40, height: 40)
-                        Text("\(pokemon.pokemonName)")
+            ScrollView {
+                LazyVGrid(columns: columns) {
+                    ForEach(self.pokemons) { pokemon in
+                        VStack(spacing: 0) {
+                            ZStack {
+                                ZStack {
+                                    Rectangle()
+                                        .fill(Color(UIColor(red: 1, green: 0.345, blue: 0.333, alpha: 1)))
+                                        .frame(width: 120, height: 140)
+                                        .cornerRadius(5)
+                                    
+                                    Text("\(pokemon.pokemonName)")
+                                        .font(.subheadline)
+                                        .foregroundColor(Color.white)
+                                        .padding(.top, 105)
+                                    
+                                }.padding(0)
+                                .cornerRadius(5)
+                                
+                                Image("\(pokemon.id)")
+                                    .resizable()
+                                    .frame(width: 120, height: 110)
+                                    .background(Color.white)
+                                    .padding(.bottom, 30)
+                                    .cornerRadius(5)
+                            }
+                        }
                     }
                 }
+                .padding(.vertical)
             }
+            .background(Image("bg"))
+            .padding(.horizontal)
             .navigationBarTitle(Text("Pokemon"), displayMode: .inline)
         }
     }
