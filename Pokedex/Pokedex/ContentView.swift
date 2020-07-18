@@ -15,7 +15,7 @@ struct ContentView: View {
         TabView {
             PokeGrigView()
                 .tabItem {
-                    VStack {
+                    HStack {
                         Image(systemName: "1.circle")
                         Text("Grid View")
                     }
@@ -23,7 +23,7 @@ struct ContentView: View {
 
             PokeCardView()
                 .tabItem {
-                    VStack {
+                    HStack {
                         Image(systemName: "2.circle")
                         Text("Card View")
                     }
