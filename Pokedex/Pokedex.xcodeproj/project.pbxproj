@@ -19,6 +19,8 @@
 		F16C91D724B0E28400BEB271 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F16C91D624B0E28400BEB271 /* Assets.xcassets */; };
 		F16C91DA24B0E28400BEB271 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F16C91D924B0E28400BEB271 /* Preview Assets.xcassets */; };
 		F16C91DD24B0E28400BEB271 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F16C91DB24B0E28400BEB271 /* LaunchScreen.storyboard */; };
+		F1A6465F24C30F4D000DB516 /* PokeGrigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A6465E24C30F4D000DB516 /* PokeGrigView.swift */; };
+		F1A6466124C30FDF000DB516 /* PokeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A6466024C30FDF000DB516 /* PokeCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		F16C91D924B0E28400BEB271 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F16C91DC24B0E28400BEB271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F16C91DE24B0E28400BEB271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1A6465E24C30F4D000DB516 /* PokeGrigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeGrigView.swift; sourceTree = "<group>"; };
+		F1A6466024C30FDF000DB516 /* PokeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 				F129A3C524B0E5E70021FFE5 /* Pokemon.swift */,
 				F16C91D224B0E27F00BEB271 /* SceneDelegate.swift */,
 				F16C91D424B0E27F00BEB271 /* ContentView.swift */,
+				F1A6466024C30FDF000DB516 /* PokeCardView.swift */,
+				F1A6465E24C30F4D000DB516 /* PokeGrigView.swift */,
 				F16C91D624B0E28400BEB271 /* Assets.xcassets */,
 				F16C91DB24B0E28400BEB271 /* LaunchScreen.storyboard */,
 				F16C91DE24B0E28400BEB271 /* Info.plist */,
@@ -176,9 +182,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F129A3C424B0E5C20021FFE5 /* PokemonGenerator.swift in Sources */,
+				F1A6466124C30FDF000DB516 /* PokeCardView.swift in Sources */,
 				F129A3BC24B0E5B70021FFE5 /* csv.swift in Sources */,
 				F16C91D124B0E27F00BEB271 /* AppDelegate.swift in Sources */,
 				F16C91D324B0E27F00BEB271 /* SceneDelegate.swift in Sources */,
+				F1A6465F24C30F4D000DB516 /* PokeGrigView.swift in Sources */,
 				F16C91D524B0E27F00BEB271 /* ContentView.swift in Sources */,
 				F129A3C624B0E5E70021FFE5 /* Pokemon.swift in Sources */,
 			);

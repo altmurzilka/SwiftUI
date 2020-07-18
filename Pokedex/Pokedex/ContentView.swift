@@ -10,53 +10,24 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let pokemons: [Pokemon] = PokemonGenerator.shared.generatePokemons()
-    
-    var columns = Array(repeating: GridItem(.flexible(), spacing: 15), count: 3)
-    
-    init() {
-        UINavigationBar.appearance().barTintColor = UIColor(red: 1, green: 0.345, blue: 0.333, alpha: 1)
-        UINavigationBar.appearance().titleTextAttributes = [
-            .font : UIFont(name: "Pokemon Solid", size: 20)!,
-            .foregroundColor: UIColor.white]
-    }
-    
     var body: some View {
-        NavigationView {
-            ScrollView {
-                LazyVGrid(columns: columns) {
-                    ForEach(self.pokemons) { pokemon in
-                        VStack(spacing: 0) {
-                            ZStack {
-                                ZStack {
-                                    Rectangle()
-                                        .fill(Color(UIColor(red: 1, green: 0.345, blue: 0.333, alpha: 1)))
-                                        .frame(width: 120, height: 140)
-                                        .cornerRadius(5)
-                                    
-                                    Text("\(pokemon.pokemonName)")
-                                        .font(.subheadline)
-                                        .foregroundColor(Color.white)
-                                        .padding(.top, 105)
-                                    
-                                }.padding(0)
-                                .cornerRadius(5)
-                                
-                                Image("\(pokemon.id)")
-                                    .resizable()
-                                    .frame(width: 120, height: 110)
-                                    .background(Color.white)
-                                    .padding(.bottom, 30)
-                                    .cornerRadius(5)
-                            }
-                        }
+        
+        TabView {
+            PokeGrigView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "1.circle")
+                        Text("Grid View")
                     }
-                }
-                .padding(.vertical)
-            }
-            .background(Image("bg"))
-            .padding(.horizontal)
-            .navigationBarTitle(Text("Pokemon"), displayMode: .inline)
+                }.tag(1)
+
+            PokeCardView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "2.circle")
+                        Text("Card View")
+                    }
+                }.tag(2)
         }
     }
 }
