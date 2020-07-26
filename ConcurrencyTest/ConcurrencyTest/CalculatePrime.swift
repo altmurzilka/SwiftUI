@@ -7,28 +7,22 @@
 
 import Foundation
 
-class CalculatePrime : Operation {
-    override func main() {
-        for number in 0...1_000_000 {
-            let isPrimeNumber = isPrime(number: number)
-            print("\(number) is prime: \(isPrimeNumber)")
-        }
-    }
+struct Clue : Codable, Identifiable {
+    var id : Int
+    var answer : String
+    var question : String
+    var value : Int
+    var cat : Category
+}
+
+struct Category : Codable, Identifiable {
+    let id : Int
+    let title : String
+    let clues_count : Int
     
-    func isPrime(number: Int) -> Bool {
-        if number <= 1 {
-            return false
-        }
-        if number <= 3 {
-            return true
-        }
-        var i = 2
-        while i * i <= number {
-            if number % i == 0 {
-                return false
-            }
-            i = i + 2
-        }
-        return true
+    enum CodingKeys: String, CodingKey {
+      case id
+      case title
+      case clues_count
     }
 }
