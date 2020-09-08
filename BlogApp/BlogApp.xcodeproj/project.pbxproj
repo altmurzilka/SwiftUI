@@ -17,6 +17,9 @@
 		F17CFEAF250794CC0073D221 /* CoreDataManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17CFEAE250794CC0073D221 /* CoreDataManagers.swift */; };
 		F17CFEB2250795EF0073D221 /* NSManagedContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17CFEB1250795EF0073D221 /* NSManagedContext+Extensions.swift */; };
 		F17CFEB525079D460073D221 /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17CFEB425079D460073D221 /* PostListViewModel.swift */; };
+		F1CFBB7F25081D54009B8F77 /* AddPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CFBB7E25081D54009B8F77 /* AddPostView.swift */; };
+		F1CFBB8125081DA1009B8F77 /* AddPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CFBB8025081DA1009B8F77 /* AddPostViewModel.swift */; };
+		F1CFBB83250820CD009B8F77 /* View+Exstension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CFBB82250820CD009B8F77 /* View+Exstension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		F17CFEAE250794CC0073D221 /* CoreDataManagers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManagers.swift; sourceTree = "<group>"; };
 		F17CFEB1250795EF0073D221 /* NSManagedContext+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedContext+Extensions.swift"; sourceTree = "<group>"; };
 		F17CFEB425079D460073D221 /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
+		F1CFBB7E25081D54009B8F77 /* AddPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostView.swift; sourceTree = "<group>"; };
+		F1CFBB8025081DA1009B8F77 /* AddPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewModel.swift; sourceTree = "<group>"; };
+		F1CFBB82250820CD009B8F77 /* View+Exstension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Exstension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 				F17CFE96250791D50073D221 /* AppDelegate.swift */,
 				F17CFE98250791D50073D221 /* SceneDelegate.swift */,
 				F17CFE9D250791D50073D221 /* ContentView.swift */,
+				F1CFBB7E25081D54009B8F77 /* AddPostView.swift */,
 				F17CFE9F250791D60073D221 /* Assets.xcassets */,
 				F17CFEA4250791D60073D221 /* LaunchScreen.storyboard */,
 				F17CFEA7250791D60073D221 /* Info.plist */,
@@ -99,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				F17CFEB1250795EF0073D221 /* NSManagedContext+Extensions.swift */,
+				F1CFBB82250820CD009B8F77 /* View+Exstension.swift */,
 			);
 			path = Exstensions;
 			sourceTree = "<group>";
@@ -107,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				F17CFEB425079D460073D221 /* PostListViewModel.swift */,
+				F1CFBB8025081DA1009B8F77 /* AddPostViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -185,8 +194,11 @@
 				F17CFEB2250795EF0073D221 /* NSManagedContext+Extensions.swift in Sources */,
 				F17CFE97250791D50073D221 /* AppDelegate.swift in Sources */,
 				F17CFEAF250794CC0073D221 /* CoreDataManagers.swift in Sources */,
+				F1CFBB83250820CD009B8F77 /* View+Exstension.swift in Sources */,
 				F17CFE9C250791D50073D221 /* BlogApp.xcdatamodeld in Sources */,
 				F17CFE9E250791D50073D221 /* ContentView.swift in Sources */,
+				F1CFBB7F25081D54009B8F77 /* AddPostView.swift in Sources */,
+				F1CFBB8125081DA1009B8F77 /* AddPostViewModel.swift in Sources */,
 				F17CFE99250791D50073D221 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
