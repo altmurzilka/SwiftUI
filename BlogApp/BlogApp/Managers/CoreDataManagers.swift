@@ -27,6 +27,27 @@ class CoreDataManager {
         try self.moc.save()
     }
     
+    func getPostById(postID: UUID) throws -> Post? {
+        
+        let request: NSFetchRequest<Post> = Post.fetchRequest()
+        request.predicate = NSPredicate(format: "postID = %@", (postID.uuidString))
+        
+        let results = try self.moc.fetch(request)
+        
+        return results.first
+    }
+    
+    func updatePost(postID: String, title: String, body: String) throws {
+        
+        let postToBeUpdated = try getPostById(postID: UUID(uuidString: postID)!)
+        
+        if let postToBeUpdated = postToBeUpdated {
+            postToBeUpdated.title = title
+            postToBeUpdated.body = body
+            try save()
+        }
+    }
+    
     func getAllPosts() -> [Post] {
         
         var posts = [Post]()

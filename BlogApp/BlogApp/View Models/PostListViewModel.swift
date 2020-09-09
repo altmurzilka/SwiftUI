@@ -27,6 +27,14 @@ class PostViewModel {
         self.post = post
     }
     
+    var postID: String {
+        guard let postID = self.post.postID else {
+            return ""
+        }
+        
+        return postID.uuidString
+    }
+    
     var title: String {
         self.post.title ?? ""
     }

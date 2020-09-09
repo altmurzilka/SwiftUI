@@ -17,7 +17,9 @@ struct ContentView: View {
         VStack {
             
             List(postListVM.posts, id: \.title) { post in
-                Text(post.title)
+                NavigationLink(destination: PostDetaiView(post: post)) {
+                    Text(post.title)
+                }
             }
             .onAppear {
                 self.postListVM.fetchAllPosts()
