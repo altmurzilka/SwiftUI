@@ -11,6 +11,20 @@ class PostListViewModel: ObservableObject {
     
     @Published var posts = [PostViewModel]()
     
+    func deletePost(_ postVM: PostViewModel) -> Bool {
+        
+        var deleted = false
+        
+        do {
+            try CoreDataManager.shared.deletePost(post: postVM.post)
+            deleted = true
+        } catch {
+            print(error.localizedDescription)
+        }
+        
+        return deleted
+    }
+    
     func fetchAllPosts() {
         DispatchQueue.main.async {
             self.posts = CoreDataManager.shared.getAllPosts().map(PostViewModel.init)
