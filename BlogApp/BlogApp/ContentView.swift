@@ -14,9 +14,15 @@ struct ContentView: View {
     
     private func deletePost(at indexSet: IndexSet) {
         
+        var deleted = false
+        
         indexSet.forEach { index in
             let post = postListVM.posts[index]
-            postListVM.deletePost(post)
+            deleted = postListVM.deletePost(post)
+        }
+        
+        if deleted {
+            postListVM.fetchAllPosts()
         }
     }
     

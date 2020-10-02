@@ -23,6 +23,11 @@ class CoreDataManager {
         try save()
     }
     
+    func deletePost(post: Post) throws {
+        self.moc.delete(post)
+        try save()
+    }
+    
     private func save() throws {
         try self.moc.save()
     }
